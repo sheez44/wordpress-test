@@ -21,3 +21,6 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
  * overrides via "Additional CSS" in the Site Editor.
  */
 
+body {
+    background-color: #E95d05;
+}
