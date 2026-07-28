@@ -10,6 +10,12 @@ if( !defined('TEST_DIR_PATH')) {
 
 require_once TEST_DIR_PATH . '/inc/helpers/autoloader.php';
 
+function test_get_theme_instance() {
+    \TEST_THEME\inc\TEST_THEME::get_instance();
+}
+
+test_get_theme_instance();
+
 function test_enqueue_scripts() {
     // styles
     wp_enqueue_style('style-css', get_stylesheet_uri(), [], filemtime(get_template_directory() . '/style.css') );
