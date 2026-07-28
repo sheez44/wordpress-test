@@ -4,7 +4,11 @@
  * 
  * @package Test
  */
+if( !defined('TEST_DIR_PATH')) {
+    define('TEST_DIR_PATH', untrailingslashit(get_template_directory()));
+}
 
+require_once TEST_DIR_PATH . '/inc/helpers/autoloader.php';
 
 function test_enqueue_scripts() {
     // styles
