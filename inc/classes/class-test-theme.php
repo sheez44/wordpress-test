@@ -39,5 +39,12 @@ class TEST_THEME {
         add_theme_support( 'customize-selective-refresh-widgets' );
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
+        add_theme_support('align-wide');
+
+        global $content_width;
+        if( !isset( $global_width )) {
+            $content_width = 1240;
+        }
     }
 }
