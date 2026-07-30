@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Main template file.
+ * Blog posts index template file.
  * 
  * @package Test
  * 
@@ -10,6 +10,6 @@
 
 <?php get_header(); ?>
 <main>
-   content from index.php
+    Blog posts index
 </main>
 <?php get_footer(); ?>

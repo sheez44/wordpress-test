@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Main template file.
+ * Front page template file.
  * 
  * @package Test
  * 
@@ -10,6 +10,6 @@
 
 <?php get_header(); ?>
 <main>
-   content from index.php
+    this is the front page
 </main>
 <?php get_footer(); ?>

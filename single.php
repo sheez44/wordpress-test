@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Main template file.
+ * Singe post template file.
  * 
  * @package Test
  * 
@@ -10,6 +10,6 @@
 
 <?php get_header(); ?>
 <main>
-   content from index.php
+    Single post template
 </main>
 <?php get_footer(); ?>
