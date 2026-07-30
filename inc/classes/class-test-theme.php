@@ -15,6 +15,7 @@ class TEST_THEME {
     protected function __construct() {
         // load classes.
         Assets::get_instance();
+        Menus::get_instance();
 
         $this->setup_hooks();
     }
