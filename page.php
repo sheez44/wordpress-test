@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Blog posts index template file.
+ * Single page template file.
  * 
  * @package Test
  * 
@@ -10,6 +10,6 @@
 
 <?php get_header(); ?>
 <main>
-    Blog posts index
+    single page content
 </main>
 <?php get_footer(); ?>

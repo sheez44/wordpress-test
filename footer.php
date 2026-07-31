@@ -5,7 +5,7 @@
  * @package Test
  */
 ?>
-<footer>footer</footer>
+<footer class="container"><div class="row"><div>footer<div></div></footer>
 <?php wp_footer(); ?>
 </body>
 </html>
