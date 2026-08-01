@@ -16,6 +16,7 @@ class TEST_THEME {
         // load classes.
         Assets::get_instance();
         Menus::get_instance();
+        META_BOXES::get_instance();
 
         $this->setup_hooks();
     }
@@ -42,6 +43,8 @@ class TEST_THEME {
         add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
         add_theme_support('align-wide');
+
+        add_image_size('featured-thumbnail', 350, 233, true);
 
         global $content_width;
         if( !isset( $global_width )) {

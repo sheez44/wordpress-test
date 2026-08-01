@@ -13,6 +13,7 @@ if( !defined('TEST_DIR_URI')) {
 }
 
 require_once TEST_DIR_PATH . '/inc/helpers/autoloader.php';
+require_once TEST_DIR_PATH . '/inc/helpers/template-tags.php';
 
 function test_get_theme_instance() {
     \TEST_THEME\inc\TEST_THEME::get_instance();

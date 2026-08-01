@@ -25,7 +25,7 @@ $the_query = new WP_Query( $args );
     <?php endif; ?>
     <div class="row">
         <?php
-        if (!$the_query->have_posts() ) :
+        if ($the_query->have_posts() ) :
             while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <div class="col-lg-4 col-md-6">
                 <?php get_template_part('template-parts/content'); ?>
