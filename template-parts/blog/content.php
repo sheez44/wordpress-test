@@ -24,6 +24,7 @@
         );
     } else {
         blog_the_excerpt(200);
+        echo blog_excerpt_more();
     }
 
 ?>
