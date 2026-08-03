@@ -22,6 +22,13 @@
                 the_title('<span class="screen-reader-text">"','"</span>', false)
             )
         );
+
+        wp_link_pages(
+            [ 'before' => '<div class="page=links">'. esc_html__('Pages:', 'test'),
+            'after' => '</div>'
+            ]
+        );
+
     } else {
         blog_the_excerpt(200);
         echo blog_excerpt_more();

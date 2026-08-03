@@ -10,7 +10,7 @@
 
 <?php get_header(); ?>
 
-<main class="container">
+<main class="container mt-4">
     <?php if(is_home()): ?>
     <div class="row">
         <header class="my-5">
@@ -19,18 +19,15 @@
     </div>
     <?php endif; ?>
     <div class="row">
-        <?php
-        if (have_posts() ) :
-            while (have_posts() ) : the_post(); ?>
-                <?php get_template_part('template-parts/content'); ?>
-            <?php endwhile;
+    <?php if (have_posts() ) :
+        while (have_posts() ) : the_post(); ?>
+            <?php get_template_part('template-parts/content'); ?>
+        <?php endwhile;
         else : ?>
             <?php get_template_part('template-parts/content-none'); ?>
         <?php endif; 
         ?>
-
     </div>
-
 </main>
 
 <?php // get_sidebar(); ?>
