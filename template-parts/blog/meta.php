@@ -5,3 +5,7 @@
  * @package Test
  */
 ?>
+<div class="entry-meta mb-3">
+    <?php blog_posted_on() ?>
+    <?php blog_posted_by() ?>
+</div>

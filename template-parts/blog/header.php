@@ -11,12 +11,12 @@ $has_post_thumbnail = get_the_post_thumbnail($the_post_id)
 <header>
     <?php if($has_post_thumbnail): ?>
         <div class="mb-3">
-            <a href="<?= esc_url( get_permalink() ); ?>">
-                <?php the_post_custom_thumbnail($the_post_id, 'featured-thumbnail', []); ?>
+            <a href="<?= esc_url( get_permalink() ); ?>"
+                class="featured-thumbnail-link">
+                    <?php the_post_custom_thumbnail($the_post_id, 'featured-thumbnail', []); ?>
             </a>
         </div>
     <?php endif; ?>
-
     <?php if(is_single() || is_page()): ?>
         <?php if(! empty($hide_title) && $hide_title != 'yes'): ?>
             <h1 class="mb-3"><?= wp_kses_post(get_the_title()) ?></h1>
