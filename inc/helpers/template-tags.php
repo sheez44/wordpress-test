@@ -80,3 +80,24 @@ function blog_excerpt_more($more= '') {
 
     return $more;
 }
+
+function blog_pagination() {
+    $args = [
+        'before_page_number' => '<span class="btn border border-secondary mr-2 mb-2">',
+        'after_page_number' => '</span>',
+    ];
+
+    $allowed_tags = [
+        'nav' => [],
+        'span' => [
+            'class' => [],
+            'aria-current' => [],
+        ],
+        'a' => [
+            'class' => [],
+            'href' => [],
+        ]
+    ];
+
+    printf('<nav class="blog-pagination">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
+}

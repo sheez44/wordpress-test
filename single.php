@@ -26,7 +26,13 @@
         else : ?>
             <?php get_template_part('template-parts/content-none'); ?>
         <?php endif; 
-        ?>
+    ?>
+    </div>
+    <div class="row mb-4">
+        <div class="d-flex justify-content-between">
+            <?php previous_post_link($format = '<span>&laquo; %link</span>'); ?>
+            <?php next_post_link($format = '<span> %link &raquo;</span>'); ?>
+        </div> 
     </div>
 </main>
 

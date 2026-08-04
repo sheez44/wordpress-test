@@ -7,10 +7,6 @@
  * 
  */
 
-$args = array( 'posts_per_page' => 12 ); 
-
-// Variable to call WP_Query.
-$the_query = new WP_Query( $args ); 
 ?>
 
 <?php get_header(); ?>
@@ -25,8 +21,8 @@ $the_query = new WP_Query( $args );
     <?php endif; ?>
     <div class="row">
         <?php
-        if ($the_query->have_posts() ) :
-            while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+        if (have_posts() ) :
+            while ( have_posts() ) : the_post(); ?>
             <div class="col-lg-4 col-md-6">
                 <?php get_template_part('template-parts/content'); ?>
             </div>
@@ -34,11 +30,13 @@ $the_query = new WP_Query( $args );
         else : ?>
             <?php get_template_part('template-parts/content-none'); ?>
         <?php endif; 
-        wp_reset_postdata();
+
         ?>
 
     </div>
-
+    <div class="row">
+        <?php blog_pagination() ?>
+    </div>
 </main>
 
 <?php // get_sidebar(); ?>
