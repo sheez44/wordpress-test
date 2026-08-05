@@ -9,7 +9,7 @@ namespace TEST_THEME\inc;
 
 use TEST_THEME\Inc\Traits\Singleton;
 
-class META_BOXES {
+class Meta_Boxes {
     use Singleton;
 
        protected function __construct() {

@@ -19,21 +19,26 @@
     </div>
     <?php endif; ?>
     <div class="row">
-    <?php if (have_posts() ) :
-        while (have_posts() ) : the_post(); ?>
-            <?php get_template_part('template-parts/content'); ?>
-        <?php endwhile;
-        else : ?>
-            <?php get_template_part('template-parts/content-none'); ?>
-        <?php endif; 
-    ?>
+        <div class="col-md-8">
+            <?php if (have_posts() ) :
+                while (have_posts() ) : the_post(); ?>
+                    <?php get_template_part('template-parts/content'); ?>
+                <?php endwhile;
+                else : ?>
+                    <?php get_template_part('template-parts/content-none'); ?>
+                <?php endif; 
+            ?>
+        </div>     
+        <div class="col-md-4">
+            <?php get_sidebar(); ?>
+        </div>
     </div>
-    <div class="row mb-4">
+    <nav class="row mb-4">
         <div class="d-flex justify-content-between">
             <?php previous_post_link($format = '<span>&laquo; %link</span>'); ?>
             <?php next_post_link($format = '<span> %link &raquo;</span>'); ?>
         </div> 
-    </div>
+    </nav>
 </main>
 
 <?php // get_sidebar(); ?>

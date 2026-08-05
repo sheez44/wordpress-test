@@ -16,7 +16,8 @@ class TEST_THEME {
         // load classes.
         Assets::get_instance();
         Menus::get_instance();
-        META_BOXES::get_instance();
+        Meta_Boxes::get_instance();
+        Sidebars::get_instance();
 
         $this->setup_hooks();
     }
