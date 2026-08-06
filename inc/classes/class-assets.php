@@ -32,7 +32,7 @@ class Assets {
 
     public function register_scripts() {
         // scripts
-        wp_enqueue_script('main-js', TEST_DIR_URI . '/assets/main.js', [], filemtime(TEST_DIR_PATH . '/assets/main.js'), true );
+        wp_enqueue_script('main-js', TEST_DIR_URI . '/assets/build/js/main.js', [], filemtime(TEST_DIR_PATH . '/assets/build/js/main.js'), true );
         wp_enqueue_script('bootstrap-js', TEST_DIR_URI . '/assets/vendor/bootstrap/js/bootstrap.bundle.js', ['jquery'], false, true);
     }
 }

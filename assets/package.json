@@ -1,0 +1,33 @@
+{
+  "name": "test blog",
+  "version": "1.0.0",
+  "description": "learn how to create a wordpress site from scratch",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "wordpress",
+    "themes"
+  ],
+  "author": "My name",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-react": "^8.0.1",
+    "@wordpress/dependency-extraction-webpack-plugin": "^6.52.0",
+    "babel-loader": "^10.1.1",
+    "copy-webpack-plugin": "^14.0.0",
+    "cross-env": "^10.1.0",
+    "css-loader": "^7.1.4",
+    "css-minimizer-webpack-plugin": "^8.0.0",
+    "mini-css-extract-plugin": "^2.10.2",
+    "sass": "^1.102.0",
+    "sass-loader": "^17.0.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2"
+  }
+}
