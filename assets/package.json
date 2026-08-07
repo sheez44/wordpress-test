@@ -4,8 +4,9 @@
   "description": "learn how to create a wordpress site from scratch",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production"
+    "dev": "webpack --mode development --watch --progress",
+    "build": "webpack --mode production --progress",
+    "clean": "rimraf build"
   },
   "keywords": [
     "wordpress",
@@ -13,6 +14,11 @@
   ],
   "author": "My name",
   "license": "MIT",
+  "browserslist": [
+    "defaults",
+    "not dead",
+    "not IE 11"
+  ],
   "devDependencies": {
     "@babel/core": "^8.0.1",
     "@babel/preset-env": "^8.0.2",
@@ -24,6 +30,7 @@
     "css-loader": "^7.1.4",
     "css-minimizer-webpack-plugin": "^8.0.0",
     "mini-css-extract-plugin": "^2.10.2",
+    "rimraf": "^6.1.3",
     "sass": "^1.102.0",
     "sass-loader": "^17.0.0",
     "style-loader": "^4.0.0",
