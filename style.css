@@ -21,17 +21,3 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
  * overrides via "Additional CSS" in the Site Editor.
  */
 
-img {
-    width: 100%;
-    height: auto;
-}
-
-.featured-thumbnail-link {
-    display: block;
-    min-height: 250px;
-}
-
-.size-featured-thumbnail {
-    object-fit: cover;
-    height: 250px;
-}

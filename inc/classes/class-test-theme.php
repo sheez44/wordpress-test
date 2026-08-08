@@ -47,6 +47,10 @@ class TEST_THEME {
 
         add_image_size('featured-thumbnail', 350, 233, true);
 
+        add_theme_support( 'editor-styles' );
+        add_editor_style( 'assets/build/css/editor.css' );
+        remove_theme_support('core-block-patterns');
+
         global $content_width;
         if( !isset( $global_width )) {
             $content_width = 1240;

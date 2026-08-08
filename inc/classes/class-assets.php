@@ -26,7 +26,7 @@ class Assets {
 
     public function register_styles() {
          // styles
-        wp_enqueue_style('style-css', get_stylesheet_uri(), [], filemtime(BLOG_DIR_PATH . '/style.css') );
+        wp_enqueue_style('main-css', BLOG_BUILD_CSS_URI . '/main.css', ['bootstrap-css'], filemtime(BLOG_BUILD_CSS_DIR_PATH . '/main.css') );
         wp_enqueue_style('bootstrap-css', BLOG_DIR_URI . '/assets/vendor/bootstrap/css/bootstrap.css');
     }
 

@@ -1,0 +1,19 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-thumbnail-link {
+    display: block;
+    min-height: 250px;
+}
+
+.size-featured-thumbnail {
+    object-fit: cover;
+    height: 250px;
+}
+
+html,
+body {
+    font-family: Lato sans-serif;
+}
